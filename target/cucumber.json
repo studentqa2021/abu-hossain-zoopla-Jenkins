@@ -1,0 +1,60 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-05T20:06:31.191Z",
+        "line": 5,
+        "name": "As a Zoopla user, login should be successfull with valid credential",
+        "description": "",
+        "id": "login-function-for-zoopla;as-a-zoopla-user--login-should-be-successfull-with-valid-credential",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3951971900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Open browser \u0026 go to zoopla URL",
+            "match": {
+              "location": "com.stepdef.StepDef.getSetup()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7296423200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "try to login with credential",
+            "match": {
+              "location": "com.stepdef.StepDef.getLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1233241000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "validate login was success",
+            "match": {
+              "location": "com.stepdef.StepDef.getValidation()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login function for Zoopla",
+    "description": "",
+    "id": "login-function-for-zoopla",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Login.feature",
+    "tags": []
+  }
+]
