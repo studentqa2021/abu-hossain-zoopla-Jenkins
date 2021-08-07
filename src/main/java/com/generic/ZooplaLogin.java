@@ -11,13 +11,21 @@ public class ZooplaLogin {
 
 		MasterPageFactory obj = new MasterPageFactory(driver);
 
-		//HighLighter.getColor(driver, obj.getCookiesbtn());
+//		HighLighter.getColor(driver, obj.getCookiesbtn());
 //		if (obj.getCookiesbtn().size()>0) {
 //			HighLighter.getColor(driver, obj.getCookiesbtn().get(0));
 //			obj.getCookiesbtn().get(0).click();
 //
 //		}
 		//obj.getCookiesbtn().click();
+		HighLighter.getColor(driver, obj.getCookiesbtn());
+		if (obj.getCookiesbtn().isDisplayed()) {
+			HighLighter.getColor(driver, obj.getCookiesbtn());
+			obj.getCookiesbtn().click();
+
+		}
+		
+		
 		ScreenShot.getScreenShot(driver, "Home Page");
 		HighLighter.getColor(driver, obj.getSinginbtn());
 		obj.getSinginbtn().click();
@@ -31,13 +39,13 @@ public class ZooplaLogin {
 		HighLighter.getColor(driver, obj.getFinalsinginbtn());
 		ScreenShot.getScreenShot(driver, "Before final Sign in");
 		
-		HighLighter.getColor(driver, obj.getCookiesbtn());
-		if (obj.getCookiesbtn().isDisplayed()) {
-			HighLighter.getColor(driver, obj.getCookiesbtn());
-			obj.getCookiesbtn().click();
-
-		}
-		
+//		HighLighter.getColor(driver, obj.getCookiesbtn());
+//		if (obj.getCookiesbtn().isDisplayed()) {
+//			HighLighter.getColor(driver, obj.getCookiesbtn());
+//			obj.getCookiesbtn().click();
+//
+//		}
+//		
 		obj.getFinalsinginbtn().click();
 		ScreenShot.getScreenShot(driver, "After final Sign in");
 		
